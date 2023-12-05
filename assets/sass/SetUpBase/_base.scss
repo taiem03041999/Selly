@@ -15,14 +15,14 @@ body {
     line-height: 21px;
 
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     padding-right: 0 !important;
-    background-color: #000;
+    background-color: #f2f1f2;
 
     .container-xl {
         @include responsive_big {
-            max-width: 1494px;
+            max-width: 1384px;
         }
 
         @include responsive_fit {
@@ -36,7 +36,7 @@ body {
 
     .container {
         @include responsive_big {
-            max-width: 1176px;
+            max-width: 1144px;
         }
 
         @include responsive_HD {
@@ -54,14 +54,14 @@ body {
     h4,
     h5,
     h6 {
-        font-family: Montserrat, sans-serif;
+        font-family: Inter, sans-serif;
     }
 
     a {
-        color: #fff;
+        color: $color-main;
 
         &:hover {
-            color: #fff;
+            color: $color-text;
         }
     }
 }
