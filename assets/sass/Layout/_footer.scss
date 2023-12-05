@@ -1,0 +1,181 @@
+.footer {
+    background-color: #0c0c0e;
+
+    &-wrapper {
+        padding: 95px 0;
+
+        @include responsive_HD {
+            padding: 40px 0;
+        }
+    }
+
+    &-top {
+        @include gridBox(5, 20px, 20px);
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+
+        @include responsive_bothTM {
+            @include gridBox(2, 40px, 20px);
+            padding-bottom: 30px;
+        }
+
+        &__inner {
+            &:first-child {
+                grid-column: span 2 / span 2;
+            }
+
+            &.special {
+                display: none;
+
+                @include responsive_bothTM {
+                    display: block;
+                }
+            }
+        }
+
+        &__logo {
+            max-width: 190px;
+            margin-bottom: 40px;
+
+            @include responsive_bothTM {
+                margin: 0 auto 10px;
+            }
+        }
+
+        &__text {
+            width: 60%;
+            margin-bottom: 24px;
+
+            @include responsive_bothTM {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &__text,
+        &__link {
+            color: $color-all;
+        }
+
+        &__social {
+            @include flexBox(hor);
+
+            @include responsive_bothTM {
+                justify-content: center;
+            }
+        }
+
+        &__icon {
+            & + & {
+                margin-left: 20px;
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+            margin-bottom: 32px;
+            font-size: 16px;
+
+            @include responsive_bothTM {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__menu {
+            .footer-top__link + .footer-top__link {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &-main {
+        padding: 16px 0;
+        @include flexBox(bothSides);
+
+        @include responsive_bothTM {
+            padding-top: 32px;
+        }
+
+        &__menu {
+            @include flexBox(hor);
+
+            @include responsive_bothTM {
+                display: none;
+            }
+
+            .footer-top__link + .footer-top__link {
+                margin-left: 35px;
+            }
+        }
+
+        &__language {
+            .dropdown {
+                .btn {
+                    min-width: fit-content;
+                    @include flexBox(hor);
+                    background-color: rgb(39, 39, 42);
+                    border: 0;
+                    padding: 12px 20px;
+
+                    & > .svg1 {
+                        min-width: 24px;
+                    }
+
+                    & > .svg2 {
+                        min-width: 16px;
+                    }
+
+                    & > span {
+                        font-size: 14px;
+                        margin: 0 12px 0 10px;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &-menu {
+                    background-color: #000;
+                    border: 1px solid $color-all;
+                    width: 100%;
+                    padding: 8px;
+                }
+
+                &-item {
+                    color: #fff;
+                    padding: 7px 12px;
+                    border-radius: 3px;
+                    font-size: 14px;
+
+                    &:hover {
+                        background-color: #27272a;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        padding-top: 50px;
+
+        @include responsive_bothTM {
+            padding-top: 30px;
+        }
+
+        &__text * {
+            all: revert;
+            color: $color-all;
+        }
+
+        &__cover {
+            margin-top: 50px;
+            @include gridBox(5, 32px, 32px);
+
+            @include responsive_bothTM {
+                @include gridBox(3, 20px, 20px);
+                margin-top: 30px;
+            }
+        }
+    }
+}
