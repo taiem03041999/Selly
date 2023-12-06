@@ -1,0 +1,34 @@
+.menu {
+    background-color: #fff;
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1111;
+    display: none;
+
+    @include responsive_bothTM {
+        display: block;
+    }
+
+    &-wrapper {
+        @include gridBox(3, 0, 0);
+    }
+
+    &-item {
+        @include flexBox(both);
+        flex-direction: column;
+        color: $color-text;
+
+        &.active {
+            color: $color-main;
+        }
+
+        & > span {
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    }
+}

@@ -80,6 +80,27 @@
         }
     }
 
+    &-list {
+        @include gridBox(5, 20px, 20px);
+        margin-bottom: 60px;
+
+        @include responsive_bigLow {
+            margin-bottom: 40px;
+        }
+
+        @include responsive_HD {
+            gap: 10px 10px;
+        }
+
+        @include responsive_table {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include responsive_mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     &-item {
         position: relative;
         padding: 5px 5px 30px 5px;
@@ -232,6 +253,65 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+        }
+    }
+
+    &-category {
+        margin-bottom: 20px;
+
+        position: sticky;
+        top: 68px;
+        z-index: 1110;
+        background-color: #f2f1f2;
+
+        @include responsive_bothTM {
+            margin-bottom: 15px;
+            top: 50px;
+        }
+
+        .swiper {
+            &-slide {
+                width: fit-content;
+            }
+        }
+
+        &__link {
+            padding: 10px 20px;
+            border-bottom: 2px solid transparent;
+            font-size: 14px;
+
+            font-weight: bold;
+            text-transform: capitalize;
+            width: fit-content;
+            color: $color-text;
+            transition: all 0.3s;
+
+            &.active,
+            &:hover {
+                color: $color-main;
+                border-color: $color-main;
+            }
+        }
+    }
+
+    &-btn {
+        padding: 12px 160px;
+        width: fit-content;
+        min-width: max-content;
+
+        @include flexBox(hor);
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 0;
+        font-weight: 600;
+
+        @include responsive_mobile {
+            padding: 12px 40px;
+        }
+
+        & > svg {
+            margin-left: 10px;
         }
     }
 }

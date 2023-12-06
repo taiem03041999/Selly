@@ -12,5 +12,18 @@
             @include imgPT(76%);
             border-radius: 10px;
         }
+
+        .swiper {
+            @include responsive_mobile {
+                &-slide {
+                    transform: scale(0.88);
+                    transition: all 0.3s;
+
+                    &-active {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
     }
 }

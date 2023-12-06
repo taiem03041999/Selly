@@ -2,6 +2,10 @@
     &-slider {
         margin: 16px 0 40px;
 
+        @include responsive_bothTM {
+            margin-bottom: 30px;
+        }
+
         .swiper {
             &-wrapper {
                 flex-direction: initial !important;
@@ -18,6 +22,10 @@
                     height: 45px;
                     background-color: rgba(0, 0, 0, 0.2);
                     border-radius: 50%;
+
+                    @include responsive_bothTM {
+                        display: none;
+                    }
 
                     &::after {
                         display: none;
@@ -78,7 +86,7 @@
         margin-bottom: 20px;
 
         @include responsive_bothTM {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         &__title {
