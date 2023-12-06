@@ -22,9 +22,14 @@
                     height: 45px;
                     background-color: rgba(0, 0, 0, 0.2);
                     border-radius: 50%;
+                    transition: all 0.3s;
 
                     @include responsive_bothTM {
                         display: none;
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.3);
                     }
 
                     &::after {
