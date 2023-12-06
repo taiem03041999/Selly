@@ -1,0 +1,16 @@
+.supplier {
+    &-wrapper {
+        margin-bottom: 60px;
+
+        @include responsive_bigLow {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-slider {
+        &__img {
+            @include imgPT(76%);
+            border-radius: 10px;
+        }
+    }
+}

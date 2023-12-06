@@ -36,7 +36,7 @@ body {
 
     .container {
         @include responsive_big {
-            max-width: 1144px;
+            max-width: 1164px;
         }
 
         @include responsive_HD {

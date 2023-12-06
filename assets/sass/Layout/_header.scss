@@ -4,10 +4,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1111;
 
     &-wrapper {
         @include flexBox(bothSides);
         height: 68px;
+
+        @include responsive_bothTM {
+            display: none;
+        }
     }
 
     &-main {
