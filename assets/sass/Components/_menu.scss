@@ -5,11 +5,15 @@
     padding: 10px;
 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    z-index: 1111;
+    z-index: 111;
     display: none;
 
     @include responsive_bothTM {
         display: block;
+    }
+
+    &.special {
+        padding: 0;
     }
 
     &-wrapper {

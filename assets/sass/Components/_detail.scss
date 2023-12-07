@@ -485,6 +485,22 @@
             @include responsive_bothTM {
                 display: none;
             }
+
+            &.special {
+                @include responsive_bothTM {
+                    @include flexBox(hor);
+                    margin: 0;
+                }
+
+                .detail-content__btnSub {
+                    font-size: 14px;
+                    border-radius: 0;
+                }
+
+                .detail-content__btnSub + .detail-content__btnSub {
+                    margin: 0;
+                }
+            }
         }
 
         &__btnSub {
@@ -524,6 +540,105 @@
         @include responsive_bothTM {
             width: 100%;
             max-width: 100%;
+        }
+    }
+
+    &-modal {
+        .modal-content {
+            padding: 10px 20px 20px;
+            border-radius: 20px;
+        }
+
+        &__slider {
+            @include flexBox(top);
+            width: 100%;
+        }
+
+        &__show {
+            width: 65%;
+
+            .swiper {
+                &-button {
+                    &-next,
+                    &-prev {
+                        width: 45px;
+                        height: 45px;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                        transition: all 0.3s;
+
+                        @include responsive_bothTM {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.3);
+                        }
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &-next {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 55%;
+                            transform: translate(-50%, -50%);
+
+                            width: 16px;
+                            height: 16px;
+                            background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' height='64px' width='64px' version='1.1' id='XMLID_287_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 24 24' xml:space='preserve'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg id='next'%3E%3Cg%3E%3Cpolygon points='6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 '%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+
+                    &-prev {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 48%;
+                            transform: translate(-50%, -50%);
+
+                            width: 16px;
+                            height: 16px;
+                            background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' height='64px' width='64px' version='1.1' id='XMLID_287_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 24 24' xml:space='preserve' transform='rotate(180)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg id='next'%3E%3Cg%3E%3Cpolygon points='6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 '%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+
+                    &-disabled {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        &__thumbs {
+            width: 35%;
+
+            .swiper {
+                &-wrapper {
+                    @include gridBox(3, 10px, 10px);
+                }
+
+                &-slide {
+                    &-thumb-active {
+                        .detail-slider__btn {
+                            border-color: $color-main;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__show + &__thumbs {
+            margin-left: 20px;
         }
     }
 }
