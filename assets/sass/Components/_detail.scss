@@ -1,6 +1,14 @@
 .detail {
     background-color: #fff;
-    padding-top: 20px;
+
+    &-wrapper {
+        padding: 20px 0 60px;
+        margin-bottom: 10px;
+
+        @include responsive_bigLow {
+            padding: 20px 0 40px;
+        }
+    }
 
     &-breadcrumb {
         margin-bottom: 20px;
@@ -10,6 +18,7 @@
         &__item {
             @include flexBox(hor);
             margin-right: 5px;
+            line-height: 24px;
 
             &:last-child {
                 .detail-breadcrumb__text {
@@ -22,10 +31,18 @@
 
     &-cover {
         @include flexBox(top);
+
+        @include responsive_bothTM {
+            flex-direction: column;
+        }
     }
 
     &-slider + &-content {
         margin-left: 40px;
+
+        @include responsive_bothTM {
+            margin-left: 0;
+        }
     }
 
     &-slider {
@@ -48,6 +65,10 @@
         }
 
         &__thumbs {
+            @include responsive_bothTM {
+                display: none;
+            }
+
             .swiper {
                 &-slide {
                     &-thumb-active {
@@ -156,6 +177,11 @@
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: 20px;
+
+            @include responsive_bothTM {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
         }
 
         &__price {
@@ -164,6 +190,10 @@
             font-weight: bold;
             color: $color-main;
             line-height: initial;
+
+            @include responsive_bothTM {
+                font-size: 18px;
+            }
         }
 
         &__text {
@@ -173,6 +203,11 @@
             &.special {
                 margin-bottom: 0;
                 min-width: 35%;
+                padding-right: 10px;
+
+                @include responsive_bothTM {
+                    min-width: 45%;
+                }
             }
 
             &.special2 {
@@ -188,6 +223,22 @@
         &__evaluate {
             @include flexBox(hor);
             margin-bottom: 10px;
+
+            &.special {
+                margin-bottom: 0;
+
+                .detail-content {
+                    &__star {
+                        .fa-solid {
+                            font-size: 13px;
+                        }
+                    }
+
+                    &__total {
+                        font-size: 14px;
+                    }
+                }
+            }
         }
 
         &__star {
@@ -230,19 +281,18 @@
         &__type {
             min-width: 110px;
             font-weight: 500;
+            margin-bottom: 10px;
         }
 
         &__list {
             @include flexBox(hor);
+            flex-flow: row wrap;
         }
 
         &__option {
             position: relative;
             cursor: pointer;
-
-            & + & {
-                margin-left: 10px;
-            }
+            margin: 0 10px 10px 0;
         }
 
         &__span {
@@ -276,6 +326,10 @@
             @include flexBox(top);
             padding-bottom: 10px;
             border-bottom: 1px solid #f2f1f2;
+
+            @include responsive_bothTM {
+                flex-direction: column;
+            }
         }
 
         &__top + &__box {
@@ -284,6 +338,10 @@
 
         &__freeship {
             min-width: 38%;
+
+            @include responsive_bothTM {
+                margin-bottom: 10px;
+            }
         }
 
         &__ul {
@@ -386,6 +444,50 @@
 
         &__btn {
             margin-top: 30px;
+            @include flexBox(hor);
+
+            @include responsive_bothTM {
+                display: none;
+            }
+        }
+
+        &__btnSub {
+            @include flexBox(hor);
+            border: 0;
+            border-radius: 10px;
+            background-color: #3478f6;
+            color: #fff;
+            padding: 18px 20px;
+            font-weight: 600;
+            font-size: 17px;
+            min-width: max-content;
+
+            & > span {
+                margin-left: 15px;
+            }
+
+            &.special {
+                background-color: $color-main;
+                width: 100%;
+
+                & > span {
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            & + & {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &-slider,
+    &-content {
+        @include responsive_bothTM {
+            width: 100%;
+            max-width: 100%;
         }
     }
 }

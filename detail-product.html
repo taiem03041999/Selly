@@ -1,275 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Selly</title>
-        <!-- Icon title -->
-        <link rel="shortcut icon" type="image/x-icon" href="" />
-        <!-- fontAwesome Css -->
-        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-        <!-- Swiper Css -->
-        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-        <!-- Select Css -->
-        <link rel="stylesheet" href="./assets/css/select2.css" />
-        <!-- Bootstrap Css -->
-        <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
 
-        <!-- Font family -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500;700;900&family=Open+Sans:ital,wght@0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selly</title>
+    <!-- Icon title -->
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <!-- fontAwesome Css -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Select Css -->
+    <link rel="stylesheet" href="./assets/css/select2.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
 
-        <!-- Style Css -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500;700;900&family=Open+Sans:ital,wght@0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet" />
 
-    <body>
-        <!-- Begin Header -->
-        <header id="header" class="header">
-            <div class="container-xl">
-                <div class="header-wrapper">
-                    <div class="header-main">
-                        <a href="/" class="header-logo">
-                            <img src="./assets/images/Logo-selly.svg" alt="" />
-                        </a>
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-                        <form action="" class="header-form">
-                            <input type="search" placeholder="Tìm kiếm sản phẩm" class="header-form__input" />
+<body>
+    <!-- Begin Header -->
+    <header id="header" class="header">
+        <div class="container-xl">
+            <div class="header-wrapper">
+                <div class="header-main">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/Logo-selly.svg" alt="" />
+                    </a>
 
-                            <button class="header-form__btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M22 21.9998L15.656 15.6558" stroke="#cc3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="#cc3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                            </button>
+                    <form action="" class="header-form">
+                        <input type="search" placeholder="Tìm kiếm sản phẩm" class="header-form__input" />
 
-                            <!-- add active -->
-                            <div class="header-form__cover">
-                                <div class="header-form__wrap">
-                                    <a href="#" class="header-form__sub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="mdl-js">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z" fill="#9B9FAC" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <rect width="16" height="16" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
+                        <button class="header-form__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 21.9998L15.656 15.6558" stroke="#cc3366" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                                    stroke="#cc3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
 
-                                        <span class="header-form__key">selly pro</span>
-                                    </a>
+                        <!-- add active -->
+                        <div class="header-form__cover">
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" class="mdl-js">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z"
+                                                fill="#9B9FAC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
 
-                                    <a href="#" class="header-form__sub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="mdl-js">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z" fill="#9B9FAC" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <rect width="16" height="16" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
+                                    <span class="header-form__key">selly pro</span>
+                                </a>
 
-                                        <span class="header-form__key">selly pro</span>
-                                    </a>
-                                </div>
+                                <a href="#" class="header-form__sub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" class="mdl-js">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z"
+                                                fill="#9B9FAC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
 
-                                <h3 class="header-form__title">Thương hiệu</h3>
-
-                                <div class="header-form__wrap">
-                                    <a href="#" class="header-form__sub">
-                                        <div class="header-form__avt">
-                                            <img src="./assets/images/img-1.jpg" alt="" />
-                                        </div>
-
-                                        <span class="header-form__key">Thắng giang</span>
-                                    </a>
-
-                                    <a href="#" class="header-form__sub">
-                                        <div class="header-form__avt">
-                                            <img src="./assets/images/img-1.jpg" alt="" />
-                                        </div>
-
-                                        <span class="header-form__key">Thắng giang</span>
-                                    </a>
-                                </div>
-
-                                <h3 class="header-form__title">Nhà cung cấp</h3>
-
-                                <div class="header-form__wrap">
-                                    <a href="#" class="header-form__sub">
-                                        <div class="header-form__avt">
-                                            <img src="./assets/images/img-1.jpg" alt="" />
-                                        </div>
-
-                                        <span class="header-form__key">Thắng giang</span>
-                                    </a>
-
-                                    <a href="#" class="header-form__sub">
-                                        <div class="header-form__avt">
-                                            <img src="./assets/images/img-1.jpg" alt="" />
-                                        </div>
-
-                                        <span class="header-form__key">Thắng giang</span>
-                                    </a>
-                                </div>
+                                    <span class="header-form__key">selly pro</span>
+                                </a>
                             </div>
-                        </form>
-                    </div>
 
-                    <div class="header-menu__list">
-                        <div class="header-menu__item"></div>
-                    </div>
+                            <h3 class="header-form__title">Thương hiệu</h3>
+
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+                            </div>
+
+                            <h3 class="header-form__title">Nhà cung cấp</h3>
+
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="header-mobile">
-                    <h3 class="header-mobile__title">Selly - Bán hàng dễ dàng</h3>
-
-                    <div class="header-mobile__cover">
-                        <button type="button" class="header-mobile__btn">
-                            <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M19 11V8C19 6.14348 18.2625 4.36301 16.9497 3.05025C15.637 1.7375 13.8565 1 12 1C10.1435 1 8.36301 1.7375 7.05025 3.05025C5.7375 4.36301 5 6.14348 5 8V11C5 14.3 2 15.1 2 17C2 18.7 5.9 20 12 20C18.1 20 22 18.7 22 17C22 15.1 19 14.3 19 11Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M11.9995 22.0004C10.9885 22.0004 10.0385 21.9664 9.14453 21.9004C9.33513 22.5084 9.71483 23.0396 10.2283 23.4168C10.7419 23.794 11.3624 23.9974 11.9995 23.9974C12.6367 23.9974 13.2572 23.794 13.7707 23.4168C14.2842 23.0396 14.6639 22.5084 14.8545 21.9004C13.9605 21.9664 13.0105 22.0004 11.9995 22.0004Z" fill="currentColor"></path>
-                            </svg>
-                        </button>
-
-                        <button type="button" class="header-mobile__btn">
-                            <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z" fill="currentColor"></path>
-                                <path d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z" fill="currentColor"></path>
-                                <path d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M4.8 7H22L20 17H6L4 2H1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </div>
+                <div class="header-menu__list">
+                    <div class="header-menu__item"></div>
                 </div>
             </div>
-        </header>
-        <!-- End Header -->
 
-        <!-- Begin Content -->
-        <main class="home">
-            <!-- Begin Detail -->
-            <section class="detail">
-                <div class="container">
-                    <div class="detail-wrapper">
-                        <div class="detail-breadcrumb">
-                            <a href="/" class="detail-breadcrumb__item">
-                                <span class="detail-breadcrumb__text">Trang chủ</span>
-                            </a>
+            <div class="header-mobile">
+                <h3 class="header-mobile__title">Selly - Bán hàng dễ dàng</h3>
 
-                            <a href="#" class="detail-breadcrumb__item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="align-self-center">
-                                    <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
+                <div class="header-mobile__cover">
+                    <button type="button" class="header-mobile__btn">
+                        <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M19 11V8C19 6.14348 18.2625 4.36301 16.9497 3.05025C15.637 1.7375 13.8565 1 12 1C10.1435 1 8.36301 1.7375 7.05025 3.05025C5.7375 4.36301 5 6.14348 5 8V11C5 14.3 2 15.1 2 17C2 18.7 5.9 20 12 20C18.1 20 22 18.7 22 17C22 15.1 19 14.3 19 11Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M11.9995 22.0004C10.9885 22.0004 10.0385 21.9664 9.14453 21.9004C9.33513 22.5084 9.71483 23.0396 10.2283 23.4168C10.7419 23.794 11.3624 23.9974 11.9995 23.9974C12.6367 23.9974 13.2572 23.794 13.7707 23.4168C14.2842 23.0396 14.6639 22.5084 14.8545 21.9004C13.9605 21.9664 13.0105 22.0004 11.9995 22.0004Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
 
-                                <span class="detail-breadcrumb__text">Thời trang nam</span>
-                            </a>
+                    <button type="button" class="header-mobile__btn">
+                        <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M4.8 7H22L20 17H6L4 2H1" stroke="currentColor" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
 
-                            <div class="detail-breadcrumb__item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="align-self-center">
-                                    <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
+    <!-- Begin Content -->
+    <main class="home">
+        <!-- Begin Detail -->
+        <section class="detail">
+            <div class="container">
+                <div class="detail-wrapper">
+                    <div class="detail-breadcrumb">
+                        <a href="/" class="detail-breadcrumb__item">
+                            <span class="detail-breadcrumb__text">Trang chủ</span>
+                        </a>
 
-                                <span class="detail-breadcrumb__text">Áo phao khóa ngang Ap02</span>
+                        <a href="#" class="detail-breadcrumb__item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="align-self-center">
+                                <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                            <span class="detail-breadcrumb__text">Thời trang nam</span>
+                        </a>
+
+                        <div class="detail-breadcrumb__item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="align-self-center">
+                                <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                            <span class="detail-breadcrumb__text">Áo phao khóa ngang Ap02</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-cover">
+                        <div class="detail-slider">
+                            <div class="detail-slider__show">
+                                <div class="swiper detail-sliderSwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="detail-slider__img">
+                                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="detail-slider__img">
+                                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="detail-slider__img">
+                                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="detail-slider__img">
+                                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="detail-slider__img">
+                                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail-slider__thumbs">
+                                <div thumbsSlider="" class="swiper detail-sliderSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <button type="button" class="detail-slider__btn">
+                                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                            </button>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <button type="button" class="detail-slider__btn">
+                                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                            </button>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <button type="button" class="detail-slider__btn">
+                                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                            </button>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <button type="button" class="detail-slider__btn">
+                                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                            </button>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <button type="button" class="detail-slider__btn">
+                                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="detail-cover">
-                            <div class="detail-slider">
-                                <div class="detail-slider__show">
-                                    <div class="swiper detail-sliderSwiper2">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="detail-slider__img">
-                                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                                </div>
-                                            </div>
+                        <div class="detail-content">
+                            <button type="button" class="detail-content__report">Báo cáo</button>
 
-                                            <div class="swiper-slide">
-                                                <div class="detail-slider__img">
-                                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                                </div>
-                                            </div>
+                            <h2 class="detail-content__title">Áo phao khóa ngang AP02</h2>
 
-                                            <div class="swiper-slide">
-                                                <div class="detail-slider__img">
-                                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                                </div>
-                                            </div>
+                            <p class="detail-content__price">152.490đ</p>
 
-                                            <div class="swiper-slide">
-                                                <div class="detail-slider__img">
-                                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                                </div>
-                                            </div>
+                            <p class="detail-content__text">Đã bán 254</p>
 
-                                            <div class="swiper-slide">
-                                                <div class="detail-slider__img">
-                                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="detail-content__evaluate">
+                                <div class="detail-content__star">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                </div>
+
+                                <p class="detail-content__total">4.9/5</p>
+                            </div>
+
+                            <button type="button" class="detail-content__pay">
+                                <img src="./assets/images/detail-product-pay.png" alt="" />
+                            </button>
+
+                            <form action="" class="detail-content__form">
+                                <div class="detail-content__group">
+                                    <p class="detail-content__type">Màu sắc</p>
+
+                                    <div class="detail-content__list">
+                                        <label for="detail-option-1" class="detail-content__option">
+                                            <input type="radio" name="detail-option-color" id="detail-option-1"
+                                                class="detail-content__check" checked />
+                                            <span class="detail-content__span">trắng</span>
+                                        </label>
+
+                                        <label for="detail-option-2" class="detail-content__option">
+                                            <input type="radio" name="detail-option-color" id="detail-option-2"
+                                                class="detail-content__check" />
+                                            <span class="detail-content__span">đen</span>
+                                        </label>
                                     </div>
                                 </div>
 
-                                <div class="detail-slider__thumbs">
-                                    <div thumbsSlider="" class="swiper detail-sliderSwiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <button type="button" class="detail-slider__btn">
-                                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                                </button>
-                                            </div>
+                                <div class="detail-content__group">
+                                    <p class="detail-content__type">Size</p>
 
-                                            <div class="swiper-slide">
-                                                <button type="button" class="detail-slider__btn">
-                                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                                </button>
-                                            </div>
+                                    <div class="detail-content__list">
+                                        <label for="detail-option-3" class="detail-content__option">
+                                            <input type="radio" name="detail-option-size" id="detail-option-3"
+                                                class="detail-content__check" checked />
+                                            <span class="detail-content__span">S</span>
+                                        </label>
 
-                                            <div class="swiper-slide">
-                                                <button type="button" class="detail-slider__btn">
-                                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                                </button>
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <button type="button" class="detail-slider__btn">
-                                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                                </button>
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                <button type="button" class="detail-slider__btn">
-                                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                        <label for="detail-option-4" class="detail-content__option">
+                                            <input type="radio" name="detail-option-size" id="detail-option-4"
+                                                class="detail-content__check" />
+                                            <span class="detail-content__span">L</span>
+                                        </label>
                                     </div>
+                                </div>
+                            </form>
+
+                            <div class="detail-content__address">
+                                <div class="detail-content__top">
+                                    <div class="detail-content__freeship">
+                                        <p class="product-item__freeship special">Freeship 80k</p>
+                                    </div>
+
+                                    <ul class="detail-content__ul">
+                                        <li>Miễn phí vận chuyển 20.000đ cho đơn từ 149.000đ</li>
+                                        <li>Miễn phí vận chuyển 30.000đ cho đơn từ 249.000đ</li>
+                                        <li>Miễn phí vận chuyển 80.000đ cho đơn từ 1.000.000đ</li>
+                                    </ul>
+                                </div>
+
+                                <div class="detail-content__box">
+                                    <span class="detail-content__text special"> Vận chuyển đến </span>
+
+                                    <button class="detail-content__choose">
+                                        <span class="detail-content__text special2">Vui lòng chọn địa chỉ</span>
+
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="detail-content__box">
+                                    <span class="detail-content__text special"> Phí vận chuyển dự kiến </span>
+
+                                    <button class="detail-content__choose">
+                                        <span class="detail-content__text special2 special3">Vui lòng chọn địa
+                                            chỉ</span>
+
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
 
-                            <div class="detail-content">
-                                <button type="button" class="detail-content__report">Báo cáo</button>
+                            <div class="detail-content__sale">
+                                <p class="detail-content__up">THƯỞNG ĐẾN 18.000Đ/ĐƠN HÀNG TỪ BELL STORE</p>
+                                <p class="detail-content__sub">Áp dụng tới</p>
+                                <a href="#" class="detail-content__seemore">Xem chi tiết</a>
+                            </div>
 
-                                <h2 class="detail-content__title">Áo phao khóa ngang AP02</h2>
+                            <div class="detail-content__btn">
+                                <button class="detail-content__btnSub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
+                                        <path
+                                            d="M20 16V22H1V6H4M22 9L14 2V6C8.8 6 5 7.9 5 16C6.9 13.5 8.7 12 14 12V16L22 9Z"
+                                            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
 
-                                <p class="detail-content__price">152.490đ</p>
+                                    <span>Đăng bán</span>
+                                </button>
 
-                                <p class="detail-content__text">Đã bán 254</p>
+                                <button class="detail-content__btnSub special">
+                                    <span>Thêm vào giỏ hàng</span>
 
-                                <div class="detail-content__evaluate">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
+                                        <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Detail -->
+
+        <!-- Begin Supplier -->
+        <section class="supplier special">
+            <div class="container">
+                <div class="supplier-detail">
+                    <div class="supplier-detail__cover">
+                        <p class="supplier-detail__title">
+                            Nhà cung cấp
+                        </p>
+
+                        <a href="#" class="supplier-detail__content">
+                            <!-- add active -->
+                            <div class="supplier-detail__avt active">
+                                <img src="./assets/images/img-1.jpg" alt="" />
+                            </div>
+
+                            <div class="supplier-detail__desc">
+                                <p class="supplier-detail__name">Lê Phương</p>
+
+                                <p class="supplier-detail__sub">
+                                    <span>820</span> sản phẩm
+                                    <span>
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="currentColor"
+                                            class="link-muted">
+                                            <path
+                                                d="M2 4.39773C1.65625 4.39773 1.34233 4.31392 1.05824 4.14631C0.774148 3.97585 0.546875 3.74858 0.37642 3.46449C0.208807 3.1804 0.125 2.86648 0.125 2.52273C0.125 2.17614 0.208807 1.86222 0.37642 1.58097C0.546875 1.29687 0.774148 1.07102 1.05824 0.903409C1.34233 0.732954 1.65625 0.647727 2 0.647727C2.34659 0.647727 2.66051 0.732954 2.94176 0.903409C3.22585 1.07102 3.4517 1.29687 3.61932 1.58097C3.78977 1.86222 3.875 2.17614 3.875 2.52273C3.875 2.86648 3.78977 3.1804 3.61932 3.46449C3.4517 3.74858 3.22585 3.97585 2.94176 4.14631C2.66051 4.31392 2.34659 4.39773 2 4.39773Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>29k</span> đã bán
+                                </p>
+
+                                <p class="supplier-detail__sub">
+                                    <span>7.8k</span> seller bán hàng
+                                </p>
+
+                                <p class="supplier-detail__sub">
+                                    <span>7.8k</span> seller theo dõi
+                                </p>
+
+                                <div class="detail-content__evaluate special">
                                     <div class="detail-content__star">
                                         <i class="fa-solid fa-star active"></i>
                                         <i class="fa-solid fa-star active"></i>
@@ -281,239 +482,329 @@
                                     <p class="detail-content__total">4.9/5</p>
                                 </div>
 
-                                <button type="button" class="detail-content__pay">
-                                    <img src="./assets/images/detail-product-pay.png" alt="" />
-                                </button>
+                                <div class="supplier-detail__address">
+                                    <svg width="16" height="16" viewBox="0 0 10 10" fill="none">
+                                        <path
+                                            d="M7.86667 3.93333C7.86667 6.33333 4.93333 9 4.93333 9C4.93333 9 2 6.33333 2 3.93333C2 3.15537 2.30905 2.40926 2.85915 1.85915C3.40926 1.30905 4.15537 1 4.93333 1C5.7113 1 6.45741 1.30905 7.00751 1.85915C7.55762 2.40926 7.86667 3.15537 7.86667 3.93333V3.93333Z"
+                                            stroke="#9B9FAC" stroke-width="0.75" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M4.93343 5.26664C5.66981 5.26664 6.26676 4.66969 6.26676 3.93331C6.26676 3.19693 5.66981 2.59998 4.93343 2.59998C4.19705 2.59998 3.6001 3.19693 3.6001 3.93331C3.6001 4.66969 4.19705 5.26664 4.93343 5.26664Z"
+                                            stroke="#9B9FAC" stroke-width="0.75" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
 
-                                <form action="" class="detail-content__form">
-                                    <div class="detail-content__group">
-                                        <p class="detail-content__type">Màu sắc</p>
-
-                                        <div class="detail-content__list">
-                                            <label for="detail-option-1" class="detail-content__option">
-                                                <input type="radio" name="detail-option-color" id="detail-option-1" class="detail-content__check" checked />
-                                                <span class="detail-content__span">trắng</span>
-                                            </label>
-
-                                            <label for="detail-option-2" class="detail-content__option">
-                                                <input type="radio" name="detail-option-color" id="detail-option-2" class="detail-content__check" />
-                                                <span class="detail-content__span">đen</span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="detail-content__group">
-                                        <p class="detail-content__type">Size</p>
-
-                                        <div class="detail-content__list">
-                                            <label for="detail-option-3" class="detail-content__option">
-                                                <input type="radio" name="detail-option-size" id="detail-option-3" class="detail-content__check" checked />
-                                                <span class="detail-content__span">S</span>
-                                            </label>
-
-                                            <label for="detail-option-4" class="detail-content__option">
-                                                <input type="radio" name="detail-option-size" id="detail-option-4" class="detail-content__check" />
-                                                <span class="detail-content__span">L</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <div class="detail-content__address">
-                                    <div class="detail-content__top">
-                                        <div class="detail-content__freeship">
-                                            <p class="product-item__freeship special">Freeship 80k</p>
-                                        </div>
-
-                                        <ul class="detail-content__ul">
-                                            <li>Miễn phí vận chuyển 20.000đ cho đơn từ 149.000đ</li>
-                                            <li>Miễn phí vận chuyển 30.000đ cho đơn từ 249.000đ</li>
-                                            <li>Miễn phí vận chuyển 80.000đ cho đơn từ 1.000.000đ</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="detail-content__box">
-                                        <span class="detail-content__text special"> Vận chuyển đến </span>
-
-                                        <button class="detail-content__choose">
-                                            <span class="detail-content__text special2">Vui lòng chọn địa chỉ</span>
-
-                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                                                <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="detail-content__box">
-                                        <span class="detail-content__text special"> Phí vận chuyển dự kiến </span>
-
-                                        <button class="detail-content__choose">
-                                            <span class="detail-content__text special2 special3">Vui lòng chọn địa chỉ</span>
-
-                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                                                <path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    <span>Tỉnh Bến Tre và 1 kho khác</span>
                                 </div>
+                            </div>
+                        </a>
 
-                                <div class="detail-content__sale">
-                                    <p class="detail-content__up">THƯỞNG ĐẾN 18.000Đ/ĐƠN HÀNG TỪ BELL STORE</p>
-                                    <p class="detail-content__sub">Áp dụng tới</p>
-                                    <a href="#" class="detail-content__seemore">Xem chi tiết</a>
-                                </div>
+                        <a href="#" class="supplier-detail__link">
+                            Nhà cung cấp đã xác thực
+                        </a>
 
-                                <div class="detail-content__btn">
-                                    <button class="detail-content__btnSub">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
-                                            <path d="M20 16V22H1V6H4M22 9L14 2V6C8.8 6 5 7.9 5 16C6.9 13.5 8.7 12 14 12V16L22 9Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
+                        <a href="#" class="supplier-detail__link special">
+                            Nhà cung cấp uy tin
+                        </a>
+                    </div>
 
-                                        <span>Đăng bán</span>
-                                    </button>
+                    <div class="supplier-detail__other">
+                        <p class="supplier-detail__title">
+                            Thông tin khác
+                        </p>
 
-                                    <button class="detail-content__btnSub special">
-                                        <span>Thêm vào giỏ hàng</span>
+                        <div class="supplier-detail__list">
+                            <div class="supplier-detail__item">
+                                <p class="supplier-detail__tag">Nhãn hiệu</p>
 
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
-                                            <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </button>
-                                </div>
+                                <!-- add class: link -->
+                                <a href="#" class="supplier-detail__location link">
+                                    Lê Phương
+                                </a>
+                            </div>
+
+                            <div class="supplier-detail__item">
+                                <p class="supplier-detail__tag">Gửi từ</p>
+
+                                <p class="supplier-detail__location">Thành phố Hồ Chí Minh</p>
+                            </div>
+
+                            <div class="supplier-detail__item">
+                                <p class="supplier-detail__tag">Danh mục</p>
+
+                                <!-- add class: link -->
+                                <a href="#" class="supplier-detail__location link">
+                                    Thời trang nam
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Detail -->
+            </div>
+        </section>
+        <!-- End Supplier -->
 
-            <!-- Begin Add-to-cart Mobile-->
-            <section class="menu">
-                <div class="container">
-                    <div class="menu-wrapper">
-                        <a href="#" class="menu-item active">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M4 13V22H20V13" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
-                                <path d="M4.00001 2L1.00001 7C0.998497 7.67436 1.22485 8.32946 1.64235 8.85905C2.05985 9.38864 2.64401 9.76165 3.3001 9.9176C3.95619 10.0735 4.64572 10.0033 5.25686 9.71819C5.868 9.4331 6.36491 8.94991 6.667 8.347C6.91348 8.84349 7.29368 9.26131 7.76479 9.5534C8.23589 9.84549 8.77919 10.0002 9.3335 10.0002C9.88781 10.0002 10.4311 9.84549 10.9022 9.5534C11.3733 9.26131 11.7535 8.84349 12 8.347C12.2465 8.84349 12.6267 9.26131 13.0978 9.5534C13.5689 9.84549 14.1122 10.0002 14.6665 10.0002C15.2208 10.0002 15.7641 9.84549 16.2352 9.5534C16.7063 9.26131 17.0865 8.84349 17.333 8.347C17.6351 8.94991 18.132 9.4331 18.7431 9.71819C19.3543 10.0033 20.0438 10.0735 20.6999 9.9176C21.356 9.76165 21.9401 9.38864 22.3577 8.85905C22.7752 8.32946 23.0015 7.67436 23 7L20 2H4.00001Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
-                                <path d="M10 22V16H14V22" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path>
-                            </svg>
-
-                            <span>Sản phẩm</span>
-                        </a>
-
-                        <a href="#" class="menu-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M7 17H17" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M20 3H22V23H2V3H4" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M7 1V7H10C10 5.895 10.895 5 12 5C13.105 5 14 5.895 14 7H17V1H7Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-
-                            <span>Sản phẩm</span>
-                        </a>
-
-                        <a href="#" class="menu-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M15 15H9C5.686 15 3 17.686 3 21V22C3 22 6.125 23 12 23C17.875 23 21 22 21 22V21C21 17.686 18.314 15 15 15Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
-                                <path d="M7 6C7 3.239 9.239 1 12 1C14.761 1 17 3.239 17 6C17 8.761 14.761 12 12 12C9.239 12 7 8.761 7 6Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
-                            </svg>
-
-                            <span>Sản phẩm</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <!-- End Add-to-cart Mobile-->
-        </main>
-        <!-- End Content -->
-
-        <!-- Begin Footer -->
-        <footer class="footer">
+        <!-- Begin Info -->
+        <section class="info">
             <div class="container">
-                <div class="footer-wrapper">
-                    <ul class="footer-menu__list">
-                        <li>
-                            <a href="#" class="footer-menu__link">Quy chế hoạt động sàn SĐTMĐT</a>
-                        </li>
+                <div class="info-wrapper">
+                    <div class="supplier-detail__cover info-cover">
+                        <h2 class="info-cover__title">
+                            Thông tin về giá
+                        </h2>
 
-                        <li>
-                            <a href="#" class="footer-menu__link">Chính sách đổi trả</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer-menu__link">Chính sách bảo mật</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer-menu__link">Chính sách giao hàng và thanh toán</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer-menu__link">Chính sách giải quyết khiếu nại</a>
-                        </li>
-                    </ul>
-
-                    <h2 class="footer-menu__title">Công ty TNHH Selly</h2>
-
-                    <div class="footer-menu__contact">
-                        <p class="footer-menu__info">
-                            <strong>Địa chỉ:</strong>
-                            Tầng 02, Tòa nhà Postef, 396 – 398 Đường 2 tháng 9, Phường Hoà Cường Bắc, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam
+                        <p class="supplier-detail__title">
+                            Giá bán của bạn
                         </p>
 
-                        <p class="footer-menu__info">
-                            <strong>Hotline:</strong>
-                            1900633829
-                        </p>
+                        <div class="supplier-detail__list">
+                            <div class="supplier-detail__item">
+                                <div class="supplier-detail__tag">
+                                    <span>Giá bán thị trường</span>
 
-                        <p class="footer-menu__info">
-                            <strong>Email:</strong>
-                            cskh@selly.vn
-                        </p>
+                                    <span class="info-cover__hover">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="#9b9fac"
+                                            class="ms-1 cursor-pointer">
+                                            <g clip-path="url(#clip0_1192:101013)">
+                                                <path
+                                                    d="M8.5 0.5C4.1 0.5 0.5 4.1 0.5 8.5C0.5 12.9 4.1 16.5 8.5 16.5C12.9 16.5 16.5 12.9 16.5 8.5C16.5 4.1 12.9 0.5 8.5 0.5ZM9.5 12.5H7.5V7.5H9.5V12.5ZM8.5 6.5C7.9 6.5 7.5 6.1 7.5 5.5C7.5 4.9 7.9 4.5 8.5 4.5C9.1 4.5 9.5 4.9 9.5 5.5C9.5 6.1 9.1 6.5 8.5 6.5Z"
+                                                    fill="inherit"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1192:101013">
+                                                    <rect width="16" height="16" fill="inherit"
+                                                        transform="translate(0.5 0.5)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+
+                                    <div class="info-cover__note">
+                                    </div>
+                                </div>
+
+                                <p class="info-cover__price">518.000đ</p>
+                            </div>
+
+                            <div class="supplier-detail__item">
+                                <div class="supplier-detail__tag">
+                                    <span>Giá nhà cung cấp</span>
+
+                                    <span class="info-cover__hover">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="#9b9fac"
+                                            class="ms-1 cursor-pointer">
+                                            <g clip-path="url(#clip0_1192:101013)">
+                                                <path
+                                                    d="M8.5 0.5C4.1 0.5 0.5 4.1 0.5 8.5C0.5 12.9 4.1 16.5 8.5 16.5C12.9 16.5 16.5 12.9 16.5 8.5C16.5 4.1 12.9 0.5 8.5 0.5ZM9.5 12.5H7.5V7.5H9.5V12.5ZM8.5 6.5C7.9 6.5 7.5 6.1 7.5 5.5C7.5 4.9 7.9 4.5 8.5 4.5C9.1 4.5 9.5 4.9 9.5 5.5C9.5 6.1 9.1 6.5 8.5 6.5Z"
+                                                    fill="inherit"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1192:101013">
+                                                    <rect width="16" height="16" fill="inherit"
+                                                        transform="translate(0.5 0.5)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+
+                                    <div class="info-cover__note">
+                                    </div>
+                                </div>
+
+                                <p class="info-cover__price">518.000đ</p>
+                            </div>
+
+                            <div class="supplier-detail__item">
+                                <div class="supplier-detail__tag">
+                                    <span>Hoa hồng</span>
+
+                                    <span class="info-cover__hover">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="#9b9fac"
+                                            class="ms-1 cursor-pointer">
+                                            <g clip-path="url(#clip0_1192:101013)">
+                                                <path
+                                                    d="M8.5 0.5C4.1 0.5 0.5 4.1 0.5 8.5C0.5 12.9 4.1 16.5 8.5 16.5C12.9 16.5 16.5 12.9 16.5 8.5C16.5 4.1 12.9 0.5 8.5 0.5ZM9.5 12.5H7.5V7.5H9.5V12.5ZM8.5 6.5C7.9 6.5 7.5 6.1 7.5 5.5C7.5 4.9 7.9 4.5 8.5 4.5C9.1 4.5 9.5 4.9 9.5 5.5C9.5 6.1 9.1 6.5 8.5 6.5Z"
+                                                    fill="inherit"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1192:101013">
+                                                    <rect width="16" height="16" fill="inherit"
+                                                        transform="translate(0.5 0.5)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+
+                                    <div class="info-cover__note">
+                                    </div>
+                                </div>
+
+                                <p class="info-cover__price special">518.000đ</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <a href="#" class="footer-menu__img">
-                        <img src="./assets/images/da-dang-ky-bo-cong-thuong.png" alt="" />
-                    </a>
+                    <div class="supplier-detail__other info-content">
+                        <h2 class="info-cover__title">
+                            Mô tả sản phẩm
+                        </h2>
 
-                    <p class="footer-menu__text">Công ty TNHH Selly được thành lập theo Giấy chứng nhận đăng ký kinh doanh số 0402107056 do Sở KH&ĐT thành phố Đà Nẵng cấp ngày 09/7/2021</p>
+                        <div class="info-content__detail">
+                            <p>Với chiết xuất hoa Anh đào Nhật Bản, kem dưỡng da ban đêm Sắc Ngọc...</p>
+                            <p>Với chiết xuất hoa Anh đào Nhật Bản, kem dưỡng da ban đêm Sắc Ngọc...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <!-- End Footer -->
+        </section>
+        <!-- End Supplier -->
 
-        <!-- Jquery JS -->
-        <script type="text/javascript" src="./assets/js/Library/jquery.min.js"></script>
-        <!-- Script Bootstrap -->
-        <script type="text/javascript" src="./assets/js/Library/bootstrap.bundle.min.js"></script>
-        <!-- Swiper JS -->
-        <script type="text/javascript" src="./assets/js/Library/swiper-bundle.min.js"></script>
-        <!-- Select2 JS -->
-        <script type="text/javascript" src="./assets/js/Library/select2.full.min.js"></script>
-        <script type="text/javascript" src="./assets/js/Library/select2-custom.js"></script>
+        <!-- Begin Add-to-cart Mobile-->
+        <section class="menu">
+            <div class="container">
+                <div class="menu-wrapper">
+                    <a href="#" class="menu-item active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13V22H20V13" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="square"></path>
+                            <path
+                                d="M4.00001 2L1.00001 7C0.998497 7.67436 1.22485 8.32946 1.64235 8.85905C2.05985 9.38864 2.64401 9.76165 3.3001 9.9176C3.95619 10.0735 4.64572 10.0033 5.25686 9.71819C5.868 9.4331 6.36491 8.94991 6.667 8.347C6.91348 8.84349 7.29368 9.26131 7.76479 9.5534C8.23589 9.84549 8.77919 10.0002 9.3335 10.0002C9.88781 10.0002 10.4311 9.84549 10.9022 9.5534C11.3733 9.26131 11.7535 8.84349 12 8.347C12.2465 8.84349 12.6267 9.26131 13.0978 9.5534C13.5689 9.84549 14.1122 10.0002 14.6665 10.0002C15.2208 10.0002 15.7641 9.84549 16.2352 9.5534C16.7063 9.26131 17.0865 8.84349 17.333 8.347C17.6351 8.94991 18.132 9.4331 18.7431 9.71819C19.3543 10.0033 20.0438 10.0735 20.6999 9.9176C21.356 9.76165 21.9401 9.38864 22.3577 8.85905C22.7752 8.32946 23.0015 7.67436 23 7L20 2H4.00001Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square">
+                            </path>
+                            <path d="M10 22V16H14V22" stroke="currentColor" stroke-width="2" stroke-miterlimit="10">
+                            </path>
+                        </svg>
 
-        <!-- ================ Header Scroll ================= -->
+                        <span>Sản phẩm</span>
+                    </a>
 
-        <!-- Detail-product Swiper -->
-        <script>
-            var swiper = new Swiper(".detail-sliderSwiper", {
-                spaceBetween: 10,
-                slidesPerView: 4.2,
-                freeMode: true,
-                watchSlidesProgress: true,
+                    <a href="#" class="menu-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7 17H17" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M20 3H22V23H2V3H4" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7 1V7H10C10 5.895 10.895 5 12 5C13.105 5 14 5.895 14 7H17V1H7Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
 
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+                        <span>Sản phẩm</span>
+                    </a>
 
-            var swiper2 = new Swiper(".detail-sliderSwiper2", {
-                spaceBetween: 10,
-                thumbs: {
-                    swiper: swiper,
-                },
-            });
-        </script>
-    </body>
+                    <a href="#" class="menu-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M15 15H9C5.686 15 3 17.686 3 21V22C3 22 6.125 23 12 23C17.875 23 21 22 21 22V21C21 17.686 18.314 15 15 15Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square">
+                            </path>
+                            <path
+                                d="M7 6C7 3.239 9.239 1 12 1C14.761 1 17 3.239 17 6C17 8.761 14.761 12 12 12C9.239 12 7 8.761 7 6Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square">
+                            </path>
+                        </svg>
+
+                        <span>Sản phẩm</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Add-to-cart Mobile-->
+    </main>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="footer-menu__list">
+                    <li>
+                        <a href="#" class="footer-menu__link">Quy chế hoạt động sàn SĐTMĐT</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách đổi trả</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách bảo mật</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách giao hàng và thanh toán</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách giải quyết khiếu nại</a>
+                    </li>
+                </ul>
+
+                <h2 class="footer-menu__title">Công ty TNHH Selly</h2>
+
+                <div class="footer-menu__contact">
+                    <p class="footer-menu__info">
+                        <strong>Địa chỉ:</strong>
+                        Tầng 02, Tòa nhà Postef, 396 – 398 Đường 2 tháng 9, Phường Hoà Cường Bắc, Quận Hải Châu, Thành
+                        phố Đà Nẵng, Việt Nam
+                    </p>
+
+                    <p class="footer-menu__info">
+                        <strong>Hotline:</strong>
+                        1900633829
+                    </p>
+
+                    <p class="footer-menu__info">
+                        <strong>Email:</strong>
+                        cskh@selly.vn
+                    </p>
+                </div>
+
+                <a href="#" class="footer-menu__img">
+                    <img src="./assets/images/da-dang-ky-bo-cong-thuong.png" alt="" />
+                </a>
+
+                <p class="footer-menu__text">Công ty TNHH Selly được thành lập theo Giấy chứng nhận đăng ký kinh doanh
+                    số 0402107056 do Sở KH&ĐT thành phố Đà Nẵng cấp ngày 09/7/2021</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Jquery JS -->
+    <script type="text/javascript" src="./assets/js/Library/jquery.min.js"></script>
+    <!-- Script Bootstrap -->
+    <script type="text/javascript" src="./assets/js/Library/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="./assets/js/Library/swiper-bundle.min.js"></script>
+    <!-- Select2 JS -->
+    <script type="text/javascript" src="./assets/js/Library/select2.full.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Library/select2-custom.js"></script>
+
+    <!-- ================ Header Scroll ================= -->
+
+    <!-- Detail-product Swiper -->
+    <script>
+        var swiper = new Swiper(".detail-sliderSwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4.2,
+            freeMode: true,
+            watchSlidesProgress: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper2 = new Swiper(".detail-sliderSwiper2", {
+            spaceBetween: 10,
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+
 </html>

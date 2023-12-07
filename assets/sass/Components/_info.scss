@@ -1,0 +1,42 @@
+.info {
+    background-color: #fff;
+
+    &-wrapper {
+        padding: 40px 0;
+        margin-bottom: 10px;
+        @include flexBox(top);
+
+        @include responsive_bothTM {
+            flex-direction: column;
+        }
+    }
+
+    &-cover {
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            @include responsive_bothTM {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__price {
+            font-size: 14px;
+            font-weight: 600;
+
+            &.special {
+                color: $color-green;
+            }
+        }
+    }
+
+    &-content {
+        &__detail * {
+            all: revert;
+        }
+    }
+}
