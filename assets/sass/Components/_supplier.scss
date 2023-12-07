@@ -225,6 +225,7 @@
 
             &.link {
                 padding-right: 35px;
+                text-transform: capitalize;
 
                 &::after {
                     content: "";

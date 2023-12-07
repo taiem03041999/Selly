@@ -9,6 +9,10 @@
         @include responsive_bothTM {
             flex-direction: column;
         }
+
+        &.special {
+            display: block;
+        }
     }
 
     &-cover {
@@ -21,6 +25,10 @@
             @include responsive_bothTM {
                 font-size: 18px;
                 margin-bottom: 10px;
+            }
+
+            &.special {
+                margin-bottom: 0;
             }
         }
 
