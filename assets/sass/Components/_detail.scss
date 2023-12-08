@@ -509,10 +509,15 @@
             border-radius: 10px;
             background-color: #3478f6;
             color: #fff;
+
             padding: 18px 20px;
             font-weight: 600;
             font-size: 17px;
             min-width: max-content;
+
+            @include responsive_bothTM {
+                padding: 12px 20px;
+            }
 
             & > span {
                 margin-left: 15px;

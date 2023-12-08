@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selly</title>
+    <!-- Icon title -->
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <!-- fontAwesome Css -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Select Css -->
+    <link rel="stylesheet" href="./assets/css/select2.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500;700;900&family=Open+Sans:ital,wght@0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <header id="header" class="header">
+        <div class="container-xl">
+            <div class="header-wrapper">
+                <div class="header-main">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/Logo-selly.svg" alt="" />
+                    </a>
+
+                    <form action="" class="header-form">
+                        <input type="search" placeholder="Tìm kiếm sản phẩm" class="header-form__input" />
+
+                        <button class="header-form__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 21.9998L15.656 15.6558" stroke="#cc3366" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                                    stroke="#cc3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+
+                        <!-- add active -->
+                        <div class="header-form__cover">
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" class="mdl-js">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z"
+                                                fill="#9B9FAC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="header-form__key">selly pro</span>
+                                </a>
+
+                                <a href="#" class="header-form__sub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none" class="mdl-js">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M12.7 11.3C13.6 10.1 14.1 8.7 14.1 7.1C14.1 3.2 11 0 7.1 0C3.2 0 0 3.2 0 7.1C0 11 3.2 14.2 7.1 14.2C8.7 14.2 10.2 13.7 11.3 12.8L14.3 15.8C14.5 16 14.8 16.1 15 16.1C15.2 16.1 15.5 16 15.7 15.8C16.1 15.4 16.1 14.8 15.7 14.4L12.7 11.3ZM7.1 12.1C4.3 12.1 2 9.9 2 7.1C2 4.3 4.3 2 7.1 2C9.9 2 12.2 4.3 12.2 7.1C12.2 9.9 9.9 12.1 7.1 12.1Z"
+                                                fill="#9B9FAC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="header-form__key">selly pro</span>
+                                </a>
+                            </div>
+
+                            <h3 class="header-form__title">
+                                Thương hiệu
+                            </h3>
+
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+                            </div>
+
+                            <h3 class="header-form__title">
+                                Nhà cung cấp
+                            </h3>
+
+                            <div class="header-form__wrap">
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+
+                                <a href="#" class="header-form__sub">
+                                    <div class="header-form__avt">
+                                        <img src="./assets/images/img-1.jpg" alt="" />
+                                    </div>
+
+                                    <span class="header-form__key">Thắng giang</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header-menu__list">
+                    <div class="header-menu__item">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mobile">
+                <h3 class="header-mobile__title">
+                    <a href="#" class="header-mobile__back">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17 2.5L7 12.5L17 22.5" stroke="#384059" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+
+                    Tài khoản
+                </h3>
+
+                <div class="header-mobile__cover">
+                    <button type="button" class="header-mobile__btn">
+                        <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M19 11V8C19 6.14348 18.2625 4.36301 16.9497 3.05025C15.637 1.7375 13.8565 1 12 1C10.1435 1 8.36301 1.7375 7.05025 3.05025C5.7375 4.36301 5 6.14348 5 8V11C5 14.3 2 15.1 2 17C2 18.7 5.9 20 12 20C18.1 20 22 18.7 22 17C22 15.1 19 14.3 19 11Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M11.9995 22.0004C10.9885 22.0004 10.0385 21.9664 9.14453 21.9004C9.33513 22.5084 9.71483 23.0396 10.2283 23.4168C10.7419 23.794 11.3624 23.9974 11.9995 23.9974C12.6367 23.9974 13.2572 23.794 13.7707 23.4168C14.2842 23.0396 14.6639 22.5084 14.8545 21.9004C13.9605 21.9664 13.0105 22.0004 11.9995 22.0004Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="header-mobile__btn">
+                        <svg width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M6 23C6.55228 23 7 22.5523 7 22C7 21.4477 6.55228 21 6 21C5.44772 21 5 21.4477 5 22C5 22.5523 5.44772 23 6 23Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M20 23C20.5523 23 21 22.5523 21 22C21 21.4477 20.5523 21 20 21C19.4477 21 19 21.4477 19 22C19 22.5523 19.4477 23 20 23Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M4.8 7H22L20 17H6L4 2H1" stroke="currentColor" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Begin Content -->
+    <main class="home">
+        <!-- Begin Account -->
+        <section class="account">
+            <div class="container">
+                <div class="account-wrapper">
+                    <div class="account-cover">
+                        <div class="account-cover__info">
+                            <div class="account-cover__avt">
+                                <img src="./assets/images/img-1.jpg" alt="" />
+                            </div>
+
+                            <div class="account-cover__desc">
+                                <p class="account-cover__name">
+                                    Nguyễn Văn A
+                                </p>
+
+                                <p class="account-cover__sub">
+                                    Thành viên
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="account-cover__link">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <g clip-path="url(#clip0_2518:7992)">
+                                    <path
+                                        d="M21 12.5V5.5H3C1.895 5.5 1 4.605 1 3.5V20.5C1 22.157 2.343 23.5 4 23.5H21V16.5"
+                                        stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17 2.5V1.5H3C1.895 1.5 1 2.395 1 3.5C1 4.605 1.895 5.5 3 5.5"
+                                        stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M23 16.5H18C16.895 16.5 16 15.605 16 14.5C16 13.395 16.895 12.5 18 12.5H23V16.5Z"
+                                        stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2518:7992">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Số dư tài khoản
+                                </p>
+
+                                <p class="account-cover__price">
+                                    0đ
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <g clip-path="url(#clip0_2518:131909)">
+                                    <path d="M7 13.5H1V1.5H19V9.671" stroke="#CC3366" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M11 12.5V16.5C11 18.157 13.686 19.5 17 19.5C20.314 19.5 23 18.157 23 16.5V12.5"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M11 16.5V20.5C11 22.157 13.686 23.5 17 23.5C20.314 23.5 23 22.157 23 20.5V16.5"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M17 15.5C20.3137 15.5 23 14.1569 23 12.5C23 10.8431 20.3137 9.5 17 9.5C13.6863 9.5 11 10.8431 11 12.5C11 14.1569 13.6863 15.5 17 15.5Z"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M10 8.5C10.5523 8.5 11 8.05228 11 7.5C11 6.94772 10.5523 6.5 10 6.5C9.44772 6.5 9 6.94772 9 7.5C9 8.05228 9.44772 8.5 10 8.5Z"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M10 8.5C10.5523 8.5 11 8.05228 11 7.5C11 6.94772 10.5523 6.5 10 6.5C9.44772 6.5 9 6.94772 9 7.5C9 8.05228 9.44772 8.5 10 8.5Z"
+                                        fill="#CC3366"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2518:131909">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Thuế TNCN của bạn
+                                </p>
+
+                                <p class="account-cover__price">
+                                    0đ
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <g clip-path="url(#clip0_2518:137945)">
+                                    <path
+                                        d="M11 12.5V16.5C11 18.157 13.686 19.5 17 19.5C20.314 19.5 23 18.157 23 16.5V12.5"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M11 16.5V20.5C11 22.157 13.686 23.5 17 23.5C20.314 23.5 23 22.157 23 20.5V16.5"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M17 15.5C20.3137 15.5 23 14.1569 23 12.5C23 10.8431 20.3137 9.5 17 9.5C13.6863 9.5 11 10.8431 11 12.5C11 14.1569 13.6863 15.5 17 15.5Z"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M8 5.5V8.5H5" stroke="#CC3366" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M8 15.5C4.134 15.5 1 12.366 1 8.5C1 4.634 4.134 1.5 8 1.5C11.171 1.5 13.85 3.609 14.71 6.501"
+                                        stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2518:137945">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Chờ đối soát
+                                </p>
+
+                                <p class="account-cover__price">
+                                    0đ
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link special">
+                            Rút tiền
+                        </a>
+                    </div>
+
+                    <div class="account-cover">
+                        <a href="#" class="account-cover__link special2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M19 20.9999H23V16.6769C22.9999 16.4771 22.9399 16.2819 22.8278 16.1165C22.7157 15.9511 22.5566 15.8231 22.371 15.7489L18.629 14.2489C18.4438 14.1749 18.2849 14.0472 18.1728 13.8822C18.0607 13.7172 18.0005 13.5224 18 13.3229V12.4449C18.6065 12.0969 19.1107 11.5952 19.4617 10.9905C19.8128 10.3857 19.9985 9.69919 20 8.99992V6.99992C20.0002 6.2977 19.8154 5.60781 19.4644 4.99961C19.1134 4.39141 18.6085 3.88633 18.0004 3.53515C17.3923 3.18397 16.7024 2.99906 16.0002 2.99902C15.298 2.99898 14.6081 3.18381 14 3.53492"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M14.371 16.749L10.629 15.249C10.4438 15.175 10.2849 15.0473 10.1728 14.8823C10.0607 14.7172 10.0005 14.5225 10 14.323V13.445C10.6065 13.0969 11.1107 12.5953 11.4617 11.9906C11.8128 11.3858 11.9985 10.6993 12 10V8C12 6.93913 11.5786 5.92172 10.8284 5.17157C10.0783 4.42143 9.06087 4 8 4C6.93913 4 5.92172 4.42143 5.17157 5.17157C4.42143 5.92172 4 6.93913 4 8V10C4.00153 10.6993 4.18717 11.3858 4.53826 11.9906C4.88935 12.5953 5.3935 13.0969 6 13.445V14.323C5.99987 14.5228 5.93989 14.718 5.82777 14.8834C5.71566 15.0488 5.55656 15.1769 5.371 15.251L1.629 16.751C1.44375 16.825 1.28488 16.9527 1.17279 17.1177C1.0607 17.2828 1.00053 17.4775 1 17.677V21H15V17.677C14.9999 17.4772 14.9399 17.282 14.8278 17.1166C14.7157 16.9512 14.5566 16.8231 14.371 16.749Z"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Khách hàng
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link special2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M19 11H5C3.89543 11 3 11.8954 3 13V21C3 22.1046 3.89543 23 5 23H19C20.1046 23 21 22.1046 21 21V13C21 11.8954 20.1046 11 19 11Z"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19Z"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M17 7V6C17.0131 4.68724 16.5042 3.42303 15.5853 2.48539C14.6664 1.54776 13.4128 1.01346 12.1 1H12C10.6872 0.986939 9.42303 1.4958 8.48539 2.41469C7.54776 3.33357 7.01346 4.58724 7 5.9V7"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Cập nhật mật khẩu
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link special2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 14H19" stroke="#CC3366" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9 18H19" stroke="#CC3366" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M19 6H9V10H19V6Z" stroke="#CC3366" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M3 23C2.47005 22.9984 1.96227 22.7872 1.58753 22.4125C1.2128 22.0377 1.00158 21.5299 1 21V13H2"
+                                    stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M5 1V21C4.99842 21.5299 4.7872 22.0377 4.41247 22.4125C4.03773 22.7872 3.52995 22.9984 3 23H21C21.5299 22.9984 22.0377 22.7872 22.4125 22.4125C22.7872 22.0377 22.9984 21.5299 23 21V1H5Z"
+                                    stroke="#CC3366" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Mẫu bài đăng bán của bạn
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="account-cover__link special2">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <g clip-path="url(#clip0_15260_7409)">
+                                    <path d="M12.5 20H1.5V1H19.5V8" stroke="currentColor" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M22.5 14.625V22L19.5 21L16.5 22V14.625" stroke="currentColor"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M19.5 16C21.7091 16 23.5 14.2091 23.5 12C23.5 9.79086 21.7091 8 19.5 8C17.2909 8 15.5 9.79086 15.5 12C15.5 14.2091 17.2909 16 19.5 16Z"
+                                        stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.5 6H14.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.5 10H11.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.5 14H11.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_15260_7409">
+                                        <rect width="24" height="24" fill="white" transform="translate(0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="account-cover__box">
+                                <p class="account-cover__text">
+                                    Mời bạn có thưởng
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#" class="account-cover__link special special3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M23 5V16C23 16.5304 22.7893 17.0391 22.4142 17.4142C22.0391 17.7893 21.5304 18 21 18H19V22L13 18H12"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M17 2H3C2.46957 2 1.96086 2.21071 1.58579 2.58579C1.21071 2.96086 1 3.46957 1 4V12C1 12.5304 1.21071 13.0391 1.58579 13.4142C1.96086 13.7893 2.46957 14 3 14H5V19L12 14H17C17.5304 14 18.0391 13.7893 18.4142 13.4142C18.7893 13.0391 19 12.5304 19 12V4C19 3.46957 18.7893 2.96086 18.4142 2.58579C18.0391 2.21071 17.5304 2 17 2Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+
+                        <span>Trung tâm trợ giúp</span>
+                    </a>
+
+                    <div class="account-group">
+                        <div class="account-group__cover">
+                            <div class="account-group__desc">
+                                <p class="account-group__title">
+                                    Hottline
+                                </p>
+
+                                <p class="account-group__text">
+                                    Giải quyết các vấn đề liên quan đến <strong>đơn hàng</strong>
+                                </p>
+                            </div>
+
+                            <div class="account-group__img">
+                                <img src="./assets/images/img-2.png" alt="" />
+                            </div>
+                        </div>
+
+                        <a href="#" class="account-group__link">
+                            <span>Gọi ngay</span>
+                        </a>
+                    </div>
+
+                    <div class="account-group">
+                        <div class="account-group__cover">
+                            <div class="account-group__desc">
+                                <p class="account-group__title special">
+                                    Cộng đồng
+                                </p>
+
+                                <p class="account-group__text">
+                                    Giải đáp thắc mắc và trao đổi kinh nghiệm bán hàng
+                                </p>
+                            </div>
+
+                            <div class="account-group__img">
+                                <img src="./assets/images/img-3.png" alt="" />
+                            </div>
+                        </div>
+
+                        <a href="#" class="account-group__link special">
+                            <span>Khám phá</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Account -->
+    </main>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="footer-menu__list">
+                    <li>
+                        <a href="#" class="footer-menu__link">Quy chế hoạt động sàn SĐTMĐT</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách đổi trả</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách bảo mật</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách giao hàng và thanh toán</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-menu__link">Chính sách giải quyết khiếu nại</a>
+                    </li>
+                </ul>
+
+                <h2 class="footer-menu__title">
+                    Công ty TNHH Selly
+                </h2>
+
+                <div class="footer-menu__contact">
+                    <p class="footer-menu__info">
+                        <strong>Địa chỉ:</strong>
+                        Tầng 02, Tòa nhà Postef, 396 – 398 Đường 2 tháng 9, Phường Hoà Cường Bắc, Quận Hải Châu, Thành
+                        phố Đà Nẵng, Việt Nam
+                    </p>
+
+                    <p class="footer-menu__info">
+                        <strong>Hotline:</strong>
+                        1900633829
+                    </p>
+
+                    <p class="footer-menu__info">
+                        <strong>Email:</strong>
+                        cskh@selly.vn
+                    </p>
+                </div>
+
+                <a href="#" class="footer-menu__img">
+                    <img src="./assets/images/da-dang-ky-bo-cong-thuong.png" alt="" />
+                </a>
+
+                <p class="footer-menu__text">
+                    Công ty TNHH Selly được thành lập theo Giấy chứng nhận đăng ký kinh doanh số 0402107056 do Sở KH&ĐT
+                    thành phố Đà Nẵng cấp ngày 09/7/2021
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Jquery JS -->
+    <script type="text/javascript" src="./assets/js/Library/jquery.min.js"></script>
+    <!-- Script Bootstrap -->
+    <script type="text/javascript" src="./assets/js/Library/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="./assets/js/Library/swiper-bundle.min.js"></script>
+    <!-- Select2 JS -->
+    <script type="text/javascript" src="./assets/js/Library/select2.full.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Library/select2-custom.js"></script>
+
+</body>
+
+</html>

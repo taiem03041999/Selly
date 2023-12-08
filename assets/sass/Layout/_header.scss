@@ -31,6 +31,7 @@
         &__title {
             font-size: 18px;
             font-weight: 600;
+            @include flexBox(hor);
         }
 
         &__btn {
@@ -40,6 +41,11 @@
             & + & {
                 margin-left: 10px;
             }
+        }
+
+        &__back {
+            min-width: 24px;
+            margin-right: 10px;
         }
     }
 

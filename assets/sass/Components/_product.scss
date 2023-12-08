@@ -282,9 +282,15 @@
             top: 50px;
         }
 
-        .swiper {
-            &-slide {
-                width: fit-content;
+        &__slider {
+            .swiper {
+                &-slide {
+                    width: fit-content;
+                }
+            }
+
+            &.special {
+                margin-bottom: 20px;
             }
         }
 
