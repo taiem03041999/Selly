@@ -2010,6 +2010,8 @@ body {
         background-color: #fff !important; }
       .cart-tab__link.active .cart-tab__text {
         color: #fff !important; }
+    .cart-tab__link:hover {
+      opacity: 1; }
     .cart-tab__link + .cart-tab__link {
       margin-left: 5px; }
   .cart-tab__stt {
